@@ -42,34 +42,9 @@ const { content } = Astro.props;
 
             <div class="h-12"></div>
 
-            <TheFooter content={mainContent.frontmatter.TheFooter} />
+            <TheFooter content={mainContent.frontmatter.TheFooter} pages={pages} />
         </div>
     </div>
-
-
-    <!-- <header style={`background-image:url(${content.img})`} class="hero">
-        <h1 class="title">{content.title}</h1>
-        <pre>
-            { content.TheFooter.social[0].name }
-        </pre>
-    </header>
-    <div class="leadIn">
-        <div class="wrapper pt8 pb8 mb8 tac">
-            {content.tags.map((t) => <span class="tag">{t}</span>)}
-			<h3 class="tagline">{content.description}</h3>
-        </div>
-    </div>
-    <div class="wrapper wrapper__readable">
-        <div class="content">
-            <slot />
-        </div>
-    </div>
-    <footer class="tac mt6">
-        <a href="/projects">
-            <Button>View More</Button>
-        </a>
-    </footer>
-    <Footer /> -->
 
 </body>
 

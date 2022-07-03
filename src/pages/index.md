@@ -22,10 +22,6 @@ TheFooter:
         - { "name": "LinkedIn", "link": "https://www.twitter.com/adsf" }
         - { "name": "Xing", "link": "https://www.twitter.com/adsf" }
         - { "name": "Instagram", "link": "https://www.twitter.com/adsf" }
-    company: 
-    - { "name": "Über mich", "link": "/ueber" }
-    - { "name": "Impressum", "link": "/impressum" }
-    - { "name": "Datenschutz", "link": "/datenschutz" }
     contact: 
      - { "name": "max@mustermann.net", "link": "mailto:max@mustermann.net" }
      - { "name": "+49 (0) 551 / 12345", "link": "phone:+4955112345" }

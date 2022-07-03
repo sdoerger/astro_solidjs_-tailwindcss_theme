@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 
-export default function (props: { content: any }) {
+export default function (props: { content: any; pages: any }) {
   const TheFooter = props.content;
 
   return (
@@ -20,11 +20,14 @@ export default function (props: { content: any }) {
       </ul>
       <ul class="space-y-1 text-gray-400">
         <li class="pb-4 font-serif text-gray-400">Über</li>
-        <For each={TheFooter.company}>
-          {(item) => (
+        <For each={props.pages}>
+          {(page) => (
             <li>
-              <a href={item.link} class="hover:underline">
-                {item.name}
+              <a
+                href={page?.url === "" ? "/" : page?.url}
+                class="hover:underline"
+              >
+                {page?.frontmatter?.navTitle}
               </a>
             </li>
           )}
